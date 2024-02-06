@@ -2,7 +2,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 .container {
@@ -10,11 +9,20 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw; /* Lebar 100% dari layar */
-  height: 100vh; /* Tinggi 100% dari layar */
-  background: url('./image/bg.jpg') center/cover; /* ganti 'nama-file-gambar.jpg' dengan nama file gambar yang kamu inginkan */
+  width: 100vw !important; /* Lebar 100% dari layar */
+  height: 100vh !important; /* Tinggi 100% dari layar */
   padding: 10px; /* untuk memberikan ruang di sekitar konten */
   text-align: center; /* untuk mengatur teks agar berada di tengah */
+}
+
+.bg-image {
+  background: url('./image/bg.jpg') center/cover; /* ganti 'nama-file-gambar.jpg' dengan nama file gambar yang kamu inginkan */
+  background-color: rgba(255, 255, 255, 0.6); /* Nilai alpha mengontrol tingkat transparansi */
+  background-blend-mode: overlay; /* Optional: Efek blend mode (opsional) */
+  width: 100vw !important; /* Lebar 100% dari layar */
+  height: 100vh !important; /* Tinggi 100% dari layar */
+  position: absolute;
+  object-fit: cover;
 }
 
 h1 {
@@ -58,9 +66,15 @@ a#startBtn:hover {
   background-color: #45a049;
 }
 
-
 canvas {
   display: block;
   border: 2px solid #000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 

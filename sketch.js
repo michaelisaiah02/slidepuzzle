@@ -18,8 +18,8 @@ const IMAGE_WIDTH = SCREEN_WIDTH;
 const IMAGE_HEIGHT = SCREEN_HEIGHT;
 
 // Function untuk membagi kotak gambar
-const slice_w = 3;
-const slice_h = 3;
+const slice_w = 2;
+const slice_h = 2;
 let w, h;
 
 // Array untuk papan gambar dan jumlah ubin
